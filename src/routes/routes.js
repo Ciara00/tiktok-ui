@@ -11,6 +11,7 @@ import Search from '~/pages/Search';
 import Live from '~/pages/Live';
 
 const publicRoutes = [
+    { path: config.routes.homePage, component: Home },
     { path: config.routes.home, component: Home },
     { path: config.routes.following, component: Following },
     { path: config.routes.profile, component: Profile },
