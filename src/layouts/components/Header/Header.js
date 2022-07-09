@@ -135,11 +135,7 @@ function Header() {
 
                 <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                     {currentUser ? (
-                        <Image
-                            className={cx('user-avatar')}
-                            src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/aab1bb2db4cebcf1c1383c2b060c8d65~c5_100x100.jpeg?x-expires=1656583200&x-signature=oJ2r57%2BhigQdpMABwvBbNsq%2FRxo%3D"
-                            alt="Huyen Trang"
-                        />
+                        <Image className={cx('user-avatar')} src={images.avatar} alt="Huyen Trang" />
                     ) : (
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
